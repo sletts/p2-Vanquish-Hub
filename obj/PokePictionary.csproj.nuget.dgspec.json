@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\burgo\\Desktop\\p2-Vanquish-Hub\\Project 2 Vanquish.csproj": {}
+    "C:\\Users\\burgo\\Desktop\\p2-Vanquish-Hub\\PokePictionary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\burgo\\Desktop\\p2-Vanquish-Hub\\Project 2 Vanquish.csproj": {
+    "C:\\Users\\burgo\\Desktop\\p2-Vanquish-Hub\\PokePictionary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\burgo\\Desktop\\p2-Vanquish-Hub\\Project 2 Vanquish.csproj",
-        "projectName": "Project 2 Vanquish",
-        "projectPath": "C:\\Users\\burgo\\Desktop\\p2-Vanquish-Hub\\Project 2 Vanquish.csproj",
+        "projectUniqueName": "C:\\Users\\burgo\\Desktop\\p2-Vanquish-Hub\\PokePictionary.csproj",
+        "projectName": "PokePictionary",
+        "projectPath": "C:\\Users\\burgo\\Desktop\\p2-Vanquish-Hub\\PokePictionary.csproj",
         "packagesPath": "C:\\Users\\burgo\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\burgo\\Desktop\\p2-Vanquish-Hub\\obj\\",
         "projectStyle": "PackageReference",
