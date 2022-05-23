@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Owner\\Desktop\\Revature\\Proj 2 Main Version\\Project 2 Vanquish\\Project 2 Vanquish.csproj": {}
+    "C:\\Users\\burgo\\Desktop\\p2-Vanquish-Hub\\Project 2 Vanquish.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Owner\\Desktop\\Revature\\Proj 2 Main Version\\Project 2 Vanquish\\Project 2 Vanquish.csproj": {
+    "C:\\Users\\burgo\\Desktop\\p2-Vanquish-Hub\\Project 2 Vanquish.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Owner\\Desktop\\Revature\\Proj 2 Main Version\\Project 2 Vanquish\\Project 2 Vanquish.csproj",
+        "projectUniqueName": "C:\\Users\\burgo\\Desktop\\p2-Vanquish-Hub\\Project 2 Vanquish.csproj",
         "projectName": "Project 2 Vanquish",
-        "projectPath": "C:\\Users\\Owner\\Desktop\\Revature\\Proj 2 Main Version\\Project 2 Vanquish\\Project 2 Vanquish.csproj",
-        "packagesPath": "C:\\Users\\Owner\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Owner\\Desktop\\Revature\\Proj 2 Main Version\\Project 2 Vanquish\\obj\\",
+        "projectPath": "C:\\Users\\burgo\\Desktop\\p2-Vanquish-Hub\\Project 2 Vanquish.csproj",
+        "packagesPath": "C:\\Users\\burgo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\burgo\\Desktop\\p2-Vanquish-Hub\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Owner\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\burgo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -71,7 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
