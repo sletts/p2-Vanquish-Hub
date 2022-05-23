@@ -1,0 +1,7 @@
+C:\Users\burgo\Desktop\p2-Vanquish-Hub\obj\Debug\net6.0\PokePictionary.csproj.AssemblyReference.cache
+C:\Users\burgo\Desktop\p2-Vanquish-Hub\obj\Debug\net6.0\PokePictionary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\burgo\Desktop\p2-Vanquish-Hub\obj\Debug\net6.0\PokePictionary.AssemblyInfoInputs.cache
+C:\Users\burgo\Desktop\p2-Vanquish-Hub\obj\Debug\net6.0\PokePictionary.AssemblyInfo.cs
+C:\Users\burgo\Desktop\p2-Vanquish-Hub\obj\Debug\net6.0\PokePictionary.csproj.CoreCompileInputs.cache
+C:\Users\burgo\Desktop\p2-Vanquish-Hub\obj\Debug\net6.0\PokePictionary.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\burgo\Desktop\p2-Vanquish-Hub\obj\Debug\net6.0\PokePictionary.MvcApplicationPartsAssemblyInfo.cache
