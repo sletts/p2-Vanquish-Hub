@@ -1,0 +1,29 @@
+C:\Users\Owner\Desktop\Revature\Vanquish Proj\Pokemon Vanquish Proj\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Owner\Desktop\Revature\Vanquish Proj\Pokemon Vanquish Proj\bin\Debug\net6.0\appsettings.json
+C:\Users\Owner\Desktop\Revature\Vanquish Proj\Pokemon Vanquish Proj\bin\Debug\net6.0\Pokemon Vanquish Proj.exe
+C:\Users\Owner\Desktop\Revature\Vanquish Proj\Pokemon Vanquish Proj\bin\Debug\net6.0\Pokemon Vanquish Proj.deps.json
+C:\Users\Owner\Desktop\Revature\Vanquish Proj\Pokemon Vanquish Proj\bin\Debug\net6.0\Pokemon Vanquish Proj.runtimeconfig.json
+C:\Users\Owner\Desktop\Revature\Vanquish Proj\Pokemon Vanquish Proj\bin\Debug\net6.0\Pokemon Vanquish Proj.dll
+C:\Users\Owner\Desktop\Revature\Vanquish Proj\Pokemon Vanquish Proj\bin\Debug\net6.0\Pokemon Vanquish Proj.pdb
+C:\Users\Owner\Desktop\Revature\Vanquish Proj\Pokemon Vanquish Proj\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\Owner\Desktop\Revature\Vanquish Proj\Pokemon Vanquish Proj\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Owner\Desktop\Revature\Vanquish Proj\Pokemon Vanquish Proj\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Owner\Desktop\Revature\Vanquish Proj\Pokemon Vanquish Proj\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Owner\Desktop\Revature\Vanquish Proj\Pokemon Vanquish Proj\obj\Debug\net6.0\Pokemon Vanquish Proj.csproj.AssemblyReference.cache
+C:\Users\Owner\Desktop\Revature\Vanquish Proj\Pokemon Vanquish Proj\obj\Debug\net6.0\Pokemon Vanquish Proj.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Owner\Desktop\Revature\Vanquish Proj\Pokemon Vanquish Proj\obj\Debug\net6.0\Pokemon Vanquish Proj.AssemblyInfoInputs.cache
+C:\Users\Owner\Desktop\Revature\Vanquish Proj\Pokemon Vanquish Proj\obj\Debug\net6.0\Pokemon Vanquish Proj.AssemblyInfo.cs
+C:\Users\Owner\Desktop\Revature\Vanquish Proj\Pokemon Vanquish Proj\obj\Debug\net6.0\Pokemon Vanquish Proj.csproj.CoreCompileInputs.cache
+C:\Users\Owner\Desktop\Revature\Vanquish Proj\Pokemon Vanquish Proj\obj\Debug\net6.0\Pokemon Vanquish Proj.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Owner\Desktop\Revature\Vanquish Proj\Pokemon Vanquish Proj\obj\Debug\net6.0\Pokemon Vanquish Proj.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Owner\Desktop\Revature\Vanquish Proj\Pokemon Vanquish Proj\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Owner\Desktop\Revature\Vanquish Proj\Pokemon Vanquish Proj\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Owner\Desktop\Revature\Vanquish Proj\Pokemon Vanquish Proj\obj\Debug\net6.0\scopedcss\bundle\Pokemon Vanquish Proj.styles.css
+C:\Users\Owner\Desktop\Revature\Vanquish Proj\Pokemon Vanquish Proj\obj\Debug\net6.0\Pokemon Vanquish Proj.csproj.CopyComplete
+C:\Users\Owner\Desktop\Revature\Vanquish Proj\Pokemon Vanquish Proj\obj\Debug\net6.0\Pokemon Vanquish Proj.dll
+C:\Users\Owner\Desktop\Revature\Vanquish Proj\Pokemon Vanquish Proj\obj\Debug\net6.0\refint\Pokemon Vanquish Proj.dll
+C:\Users\Owner\Desktop\Revature\Vanquish Proj\Pokemon Vanquish Proj\obj\Debug\net6.0\Pokemon Vanquish Proj.pdb
+C:\Users\Owner\Desktop\Revature\Vanquish Proj\Pokemon Vanquish Proj\obj\Debug\net6.0\Pokemon Vanquish Proj.genruntimeconfig.cache
+C:\Users\Owner\Desktop\Revature\Vanquish Proj\Pokemon Vanquish Proj\obj\Debug\net6.0\ref\Pokemon Vanquish Proj.dll
+C:\Users\Owner\Desktop\Revature\Vanquish Proj\Pokemon Vanquish Proj\bin\Debug\net6.0\Models.dll
+C:\Users\Owner\Desktop\Revature\Vanquish Proj\Pokemon Vanquish Proj\bin\Debug\net6.0\Models.pdb
