@@ -1,13 +1,20 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-
+using Microsoft.Extensions.Configuration;
+using System.Data.SqlClient;
+using Models;
+using DL;
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace Pokemon_Vanquish_Proj.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+
+
     public class UserAPI : ControllerBase
     {
+
+
         // GET: api/<UserAPI>
         [HttpGet]
         public IEnumerable<string> Get()
@@ -24,8 +31,19 @@ namespace Pokemon_Vanquish_Proj.Controllers
 
         // POST api/<UserAPI>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post( string name, string email, string password, string phone)
         {
+
+            UserRepo userRepo = new UserRepo();
+
+            User user = new User();
+            user.Name = name;
+            user.Email = email;
+            user.Password = password;
+            user.Phone = phone; 
+
+            userRepo.AddUser(user, "Server = tcp:steveburgos22308.database.windows.net, 1433; Initial Catalog = PokePictionary; Persist Security Info = False; User ID = steveburgos; Password = Vanquish@; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False; Connection Timeout = 30;");
+
         }
 
         // PUT api/<UserAPI>/5
@@ -39,5 +57,7 @@ namespace Pokemon_Vanquish_Proj.Controllers
         public void Delete(int id)
         {
         }
+
+
     }
 }
