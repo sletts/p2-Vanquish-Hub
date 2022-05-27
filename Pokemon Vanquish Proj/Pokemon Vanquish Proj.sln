@@ -3,13 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32319.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pokemon Vanquish Proj", "Pokemon Vanquish Proj.csproj", "{D3B80797-27CD-4120-89EC-ED39B5AA23FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pokemon Vanquish Proj", "Pokemon Vanquish Proj.csproj", "{D3B80797-27CD-4120-89EC-ED39B5AA23FA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E87303CB-A16E-47DC-9EB3-16C4D5B2E211} = {E87303CB-A16E-47DC-9EB3-16C4D5B2E211}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "..\Models\Models.csproj", "{83ECBE9C-F589-46D2-9E24-35B56426638B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "..\Models\Models.csproj", "{83ECBE9C-F589-46D2-9E24-35B56426638B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BL", "..\BL\BL.csproj", "{C24872BC-18DD-49EC-9D4A-80A5B86D4598}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BL", "..\BL\BL.csproj", "{C24872BC-18DD-49EC-9D4A-80A5B86D4598}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DL", "..\DL\DL.csproj", "{E87303CB-A16E-47DC-9EB3-16C4D5B2E211}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DL", "..\DL\DL.csproj", "{E87303CB-A16E-47DC-9EB3-16C4D5B2E211}"
+	ProjectSection(ProjectDependencies) = postProject
+		{83ECBE9C-F589-46D2-9E24-35B56426638B} = {83ECBE9C-F589-46D2-9E24-35B56426638B}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
