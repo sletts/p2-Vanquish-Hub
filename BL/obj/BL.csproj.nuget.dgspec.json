@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Revature\\p2-Vanquish-Hub\\BL\\BL.csproj": {}
+    "C:\\Revature\\randy-robinson\\Project2\\p2-Vanquish-Hub\\BL\\BL.csproj": {}
   },
   "projects": {
-    "C:\\Revature\\p2-Vanquish-Hub\\BL\\BL.csproj": {
+    "C:\\Revature\\randy-robinson\\Project2\\p2-Vanquish-Hub\\BL\\BL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Revature\\p2-Vanquish-Hub\\BL\\BL.csproj",
+        "projectUniqueName": "C:\\Revature\\randy-robinson\\Project2\\p2-Vanquish-Hub\\BL\\BL.csproj",
         "projectName": "BL",
-        "projectPath": "C:\\Revature\\p2-Vanquish-Hub\\BL\\BL.csproj",
+        "projectPath": "C:\\Revature\\randy-robinson\\Project2\\p2-Vanquish-Hub\\BL\\BL.csproj",
         "packagesPath": "C:\\Users\\goodh\\.nuget\\packages\\",
-        "outputPath": "C:\\Revature\\p2-Vanquish-Hub\\BL\\obj\\",
+        "outputPath": "C:\\Revature\\randy-robinson\\Project2\\p2-Vanquish-Hub\\BL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\goodh\\AppData\\Roaming\\NuGet\\NuGet.Config",
