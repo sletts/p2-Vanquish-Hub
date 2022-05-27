@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\burgo\\Desktop\\p2-Vanquish-Hub\\Models\\Models.csproj": {}
+    "C:\\Users\\Owner\\Desktop\\Revature\\TEST\\TEST3\\p2-Vanquish-Hub\\Models\\Models.csproj": {}
   },
   "projects": {
-    "C:\\Users\\burgo\\Desktop\\p2-Vanquish-Hub\\Models\\Models.csproj": {
+    "C:\\Users\\Owner\\Desktop\\Revature\\TEST\\TEST3\\p2-Vanquish-Hub\\Models\\Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\burgo\\Desktop\\p2-Vanquish-Hub\\Models\\Models.csproj",
+        "projectUniqueName": "C:\\Users\\Owner\\Desktop\\Revature\\TEST\\TEST3\\p2-Vanquish-Hub\\Models\\Models.csproj",
         "projectName": "Models",
-        "projectPath": "C:\\Users\\burgo\\Desktop\\p2-Vanquish-Hub\\Models\\Models.csproj",
-        "packagesPath": "C:\\Users\\burgo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\burgo\\Desktop\\p2-Vanquish-Hub\\Models\\obj\\",
+        "projectPath": "C:\\Users\\Owner\\Desktop\\Revature\\TEST\\TEST3\\p2-Vanquish-Hub\\Models\\Models.csproj",
+        "packagesPath": "C:\\Users\\Owner\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Owner\\Desktop\\Revature\\TEST\\TEST3\\p2-Vanquish-Hub\\Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\burgo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Owner\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -60,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

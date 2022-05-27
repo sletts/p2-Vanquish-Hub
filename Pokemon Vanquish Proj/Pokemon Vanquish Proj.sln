@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32319.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pokemon Vanquish Proj", "Pokemon Vanquish Proj.csproj", "{D3B80797-27CD-4120-89EC-ED39B5AA23FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokemoVanquishProj", "PokemoVanquishProj.csproj", "{D3B80797-27CD-4120-89EC-ED39B5AA23FA}"
 	ProjectSection(ProjectDependencies) = postProject
 		{E87303CB-A16E-47DC-9EB3-16C4D5B2E211} = {E87303CB-A16E-47DC-9EB3-16C4D5B2E211}
 	EndProjectSection
