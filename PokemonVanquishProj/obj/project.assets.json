@@ -9990,11 +9990,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Owner\\Desktop\\Revature\\TEST\\TEST3\\p2-Vanquish-Hub\\Pokemon Vanquish Proj\\PokemoVanquishProj.csproj",
+      "projectUniqueName": "C:\\Users\\Owner\\Desktop\\Revature\\TEST\\TEST3\\p2-Vanquish-Hub\\PokemonVanquishProj\\PokemoVanquishProj.csproj",
       "projectName": "PokemoVanquishProj",
-      "projectPath": "C:\\Users\\Owner\\Desktop\\Revature\\TEST\\TEST3\\p2-Vanquish-Hub\\Pokemon Vanquish Proj\\PokemoVanquishProj.csproj",
+      "projectPath": "C:\\Users\\Owner\\Desktop\\Revature\\TEST\\TEST3\\p2-Vanquish-Hub\\PokemonVanquishProj\\PokemoVanquishProj.csproj",
       "packagesPath": "C:\\Users\\Owner\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Owner\\Desktop\\Revature\\TEST\\TEST3\\p2-Vanquish-Hub\\Pokemon Vanquish Proj\\obj\\",
+      "outputPath": "C:\\Users\\Owner\\Desktop\\Revature\\TEST\\TEST3\\p2-Vanquish-Hub\\PokemonVanquishProj\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9NjS2DEuBfIQ2faH40jWiuO9SUvcuutmGfTGmUqCEljoPebEsfnFDA/uP9ya8zxEwinN/VCSt2Piilv3X6T1DQ==",
+  "dgSpecHash": "ABrgExJWGokaCYgGJYcHuQpooQqn249Z63URJDPHBKLiF1tiLODtkM5sYoduwdh7S5+ZKKzJ/UDttfoH8rWgcw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Owner\\Desktop\\Revature\\TEST\\TEST3\\p2-Vanquish-Hub\\Pokemon Vanquish Proj\\PokemoVanquishProj.csproj",
+  "projectFilePath": "C:\\Users\\Owner\\Desktop\\Revature\\TEST\\TEST3\\p2-Vanquish-Hub\\PokemonVanquishProj\\PokemoVanquishProj.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Owner\\.nuget\\packages\\azure.core\\1.6.0\\azure.core.1.6.0.nupkg.sha512",
     "C:\\Users\\Owner\\.nuget\\packages\\azure.identity\\1.3.0\\azure.identity.1.3.0.nupkg.sha512",
