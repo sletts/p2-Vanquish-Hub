@@ -39,7 +39,6 @@ jobs:
     - name: Build and push Docker images
       uses: docker/build-push-action@v3.0.0
       with:
-        context: ${{env.WORKING_DIRECTORY}}
         file: ${{env.WORKING_DIRECTORY}}/Dockerfile
         push: true
         tags: index.docker.io/${{secrets.DOCKER_USERNAME}}/pokemonvanquishproj:${{github.sha}}
