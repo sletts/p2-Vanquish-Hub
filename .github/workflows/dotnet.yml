@@ -23,6 +23,7 @@ jobs:
       run: dotnet build --no-restore ${{env.WORKING_DIRECTORY}}
     - name: Test
       run: dotnet test --no-build --verbosity normal ${{env.WORKING_DIRECTORY}}
+      
   sonar-build:
     name: Build
     runs-on: windows-latest
@@ -60,10 +61,9 @@ jobs:
         shell: powershell
         run: |
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"sletts_p2-Vanquish-Main" /o:"sletts" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
-          dotnet build
+          dotnet build ${{env.WORKING_DIRECTORY}}
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
 
-      
   docker-image-run:
     runs-on: ubuntu-latest
     steps:
