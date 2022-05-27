@@ -8,10 +8,9 @@ on:
 env:
   WORKING_DIRECTORY: Pokemon_Vanquish_Proj
 jobs:
+
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v3
     - name: Setup .NET
@@ -42,4 +41,14 @@ jobs:
         file: ${{env.WORKING_DIRECTORY}}/Dockerfile
         push: true
         tags: index.docker.io/${{secrets.DOCKER_USERNAME}}/pokemonvanquishproj:${{github.sha}}
-    
+  azure-deploy:
+    runs-on: ubuntu-latest
+    needs: docker-image-run
+    steps:
+    - name: Azure WebApp
+      uses: Azure/webapps-deploy@v2
+      with:
+        app-name: Vanquish-P2
+        publish-profile: $${{secrets.AZURE_PUBLISH}}
+        images: ${{secrets.DOCKER_USERNAME}}/pokemonvanquishproj:${{github.sha}}
+
