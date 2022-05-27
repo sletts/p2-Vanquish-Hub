@@ -12,7 +12,7 @@ new CanvasPoke();**/
 export class ArtworkService {
   private canvas: HTMLCanvasElement;
   private context: CanvasRenderingContext2D;
-  private paint: boolean;
+  private paint: boolean= false;
 
   private clickX: number[] = [];
   private clickY: number[] = [];
@@ -32,8 +32,7 @@ export class ArtworkService {
     this.context= context;
     this.yourDrawing();
     this.createUserEvents();
-    
-   }
+ }
    private createUserEvents(){
       let canvas= this.canvas;
 
@@ -46,12 +45,12 @@ export class ArtworkService {
       canvas.addEventListener("touchend", this.releaseEventHandler);
       canvas.addEventListener("touchcancel", this.cancelEventHandler);
 
-      document.getElementById('clear')
-              .addEventListener('click', this.clearEventHandler);
+      document.getElementById("clear")
+              .addEventListener("click", this.clearEventHandler);
     }
     private yourDrawing(){
 
-      let clickX=this.clickX;
+      let clickX= this.clickX;
       let context= this.context;
       let clickDrag= this.clickDrag;
       let clickY= this.clickY;
@@ -86,5 +85,34 @@ export class ArtworkService {
     private clearEventHandler= ()=> {this.clearYourPicture();}
     private cancelEventHandler= ()=> {this.paint= false;}
     private releaseEventHandler= ()=> {this.paint= false; this.yourDrawing();}
-    
-}
+    private pressEventHandler= (e: MouseEvent | TouchEvent)=> {
+      let mouseX= (e as TouchEvent).changedTouches?
+                  (e as TouchEvent).changedTouches[0].pageX:
+                  (e as MouseEvent).pageX;
+      let mouseY= (e as TouchEvent).changedTouches?
+                  (e as TouchEvent).changedTouches[0].pageY:
+                  (e as MouseEvent).pageY;
+      mouseX-= this.canvas.offsetLeft;
+      mouseY-= this.canvas.offsetTop;
+
+      this.paint= true;
+      this.addClick(mouseX, mouseY, false);
+      this.yourDrawing();       
+    }
+    private dragEventHandler= (e: MouseEvent | TouchEvent)=> {
+      let mouseX= (e as TouchEvent).changedTouches?
+                  (e as TouchEvent).changedTouches[0].pageX:
+                  (e as MouseEvent).pageX;
+      let mouseY= (e as TouchEvent).changedTouches?
+                  (e as TouchEvent).changedTouches[0].pageY:
+                  (e as MouseEvent).pageY;
+
+      mouseX-= this.canvas.offsetLeft;
+      mouseY-= this.canvas.offsetTop;
+      if(this.paint){
+        this.addClick(mouseX, mouseY, true);
+        this.yourDrawing();
+      }
+      e.preventDefault();
+    }
+  }
