@@ -7,10 +7,13 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["Pokemon_Vanquish_Proj.csproj", "."]
-RUN dotnet restore "./Pokemon_Vanquish_Proj.csproj"
+COPY ["Pokemon_Vanquish_Proj/Pokemon_Vanquish_Proj.csproj", "Pokemon_Vanquish_Proj/"]
+COPY ["BL/BL.csproj", "BL/"]
+COPY ["DL/DL.csproj", "DL/"]
+COPY ["Models/Models.csproj", "Models/"]
+RUN dotnet restore "Pokemon_Vanquish_Proj/Pokemon_Vanquish_Proj.csproj"
 COPY . .
-WORKDIR "/src/."
+WORKDIR "/src/Pokemon_Vanquish_Proj"
 RUN dotnet build "Pokemon_Vanquish_Proj.csproj" -c Release -o /app/build
 
 FROM build AS publish

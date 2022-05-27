@@ -268,3 +268,5 @@ C:\Users\Owner\Desktop\Revature\TEST\TEST1\p2-Vanquish-Hub\Pokemon_Vanquish_Proj
 C:\Users\Owner\Desktop\Revature\TEST\TEST1\p2-Vanquish-Hub\Pokemon_Vanquish_Proj\obj\Debug\net6.0\Pokemon_Vanquish_Proj.pdb
 C:\Users\Owner\Desktop\Revature\TEST\TEST1\p2-Vanquish-Hub\Pokemon_Vanquish_Proj\obj\Debug\net6.0\Pokemon_Vanquish_Proj.genruntimeconfig.cache
 C:\Users\Owner\Desktop\Revature\TEST\TEST1\p2-Vanquish-Hub\Pokemon_Vanquish_Proj\obj\Debug\net6.0\ref\Pokemon_Vanquish_Proj.dll
+C:\Users\Owner\Desktop\Revature\TEST\TEST1\p2-Vanquish-Hub\Pokemon_Vanquish_Proj\bin\Debug\net6.0\BL.dll
+C:\Users\Owner\Desktop\Revature\TEST\TEST1\p2-Vanquish-Hub\Pokemon_Vanquish_Proj\bin\Debug\net6.0\BL.pdb

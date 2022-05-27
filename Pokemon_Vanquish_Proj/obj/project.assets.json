@@ -3185,6 +3185,16 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
+      "BL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/BL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BL.dll": {}
+        }
+      },
       "DL/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -9961,6 +9971,11 @@
         "system.xml.xdocument.nuspec"
       ]
     },
+    "BL/1.0.0": {
+      "type": "project",
+      "path": "../BL/BL.csproj",
+      "msbuildProject": "../BL/BL.csproj"
+    },
     "DL/1.0.0": {
       "type": "project",
       "path": "../DL/DL.csproj",
@@ -9974,6 +9989,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "BL >= 1.0.0",
       "DL >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.5",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.5",
@@ -10015,6 +10031,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\Owner\\Desktop\\Revature\\TEST\\TEST1\\p2-Vanquish-Hub\\BL\\BL.csproj": {
+              "projectPath": "C:\\Users\\Owner\\Desktop\\Revature\\TEST\\TEST1\\p2-Vanquish-Hub\\BL\\BL.csproj"
+            },
             "C:\\Users\\Owner\\Desktop\\Revature\\TEST\\TEST1\\p2-Vanquish-Hub\\DL\\DL.csproj": {
               "projectPath": "C:\\Users\\Owner\\Desktop\\Revature\\TEST\\TEST1\\p2-Vanquish-Hub\\DL\\DL.csproj"
             },
