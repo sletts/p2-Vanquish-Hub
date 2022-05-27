@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Revature\\p2-Vanquish-Hub\\DL\\DL.csproj",
+      "projectUniqueName": "C:\\Revature\\randy-robinson\\Project2\\p2-Vanquish-Hub\\DL\\DL.csproj",
       "projectName": "DL",
-      "projectPath": "C:\\Revature\\p2-Vanquish-Hub\\DL\\DL.csproj",
+      "projectPath": "C:\\Revature\\randy-robinson\\Project2\\p2-Vanquish-Hub\\DL\\DL.csproj",
       "packagesPath": "C:\\Users\\goodh\\.nuget\\packages\\",
-      "outputPath": "C:\\Revature\\p2-Vanquish-Hub\\DL\\obj\\",
+      "outputPath": "C:\\Revature\\randy-robinson\\Project2\\p2-Vanquish-Hub\\DL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\goodh\\AppData\\Roaming\\NuGet\\NuGet.Config",

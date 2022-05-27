@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Revature\\p2-Vanquish-Hub\\Models\\Models.csproj",
+      "projectUniqueName": "C:\\Revature\\randy-robinson\\Project2\\p2-Vanquish-Hub\\Models\\Models.csproj",
       "projectName": "Models",
-      "projectPath": "C:\\Revature\\p2-Vanquish-Hub\\Models\\Models.csproj",
+      "projectPath": "C:\\Revature\\randy-robinson\\Project2\\p2-Vanquish-Hub\\Models\\Models.csproj",
       "packagesPath": "C:\\Users\\goodh\\.nuget\\packages\\",
-      "outputPath": "C:\\Revature\\p2-Vanquish-Hub\\Models\\obj\\",
+      "outputPath": "C:\\Revature\\randy-robinson\\Project2\\p2-Vanquish-Hub\\Models\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\goodh\\AppData\\Roaming\\NuGet\\NuGet.Config",
