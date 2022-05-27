@@ -7,9 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePageComponent implements OnInit {
 
-  constructor() { }
+  welcomeMessage:string= "Welcome to Poké - Pictionary !!"
 
-  ngOnInit(): void {
-  }
+  constructor() { console.log("Poké - Pictionary Started");}
+
+  ngOnInit(): void { console.log("Poké - Pictionary Started");}
 
 }
