@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [ main ]
 env:
-  WORKING_DIRECTORY: PokemonVanquishProj
+  WORKING_DIRECTORY: Pokemon\ Vanquis\ Proj
 jobs:
   build:
 
