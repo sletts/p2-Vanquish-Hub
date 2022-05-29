@@ -37,7 +37,7 @@ namespace Pokemon_Vanquish_Proj.Controllers
             UserRepo userRepo = new UserRepo();
 
             User user = new User();
-            user.Name = name;
+            user.Username = name;
             user.Email = email;
             user.Password = password;
             user.Phone = phone; 

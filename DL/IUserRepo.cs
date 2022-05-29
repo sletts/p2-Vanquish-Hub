@@ -10,7 +10,6 @@ namespace DL
     public interface IUserRepo
     {
         bool AddUser(User user, String connectionString);
-      
         User SearchUser(User user, String connectionString);
         List<User> SearchUsers(String connectionString);
 

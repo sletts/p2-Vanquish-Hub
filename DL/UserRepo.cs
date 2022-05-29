@@ -22,7 +22,7 @@ namespace DL
 
         public bool AddUser(User user, string connectionString)
         {
-            string commandString = $"INSERT INTO Users(UserName, UserEmail, UserPassword, UserPhone) VALUES('{user.Name}', '{user.Email}', '{user.Password}', '{user.Phone}'); ";
+            string commandString = $"INSERT INTO Users(UserName, UserEmail, UserPassword, UserPhone) VALUES('{user.Username}', '{user.Email}', '{user.Password}', '{user.Phone}'); ";
 
 
 
