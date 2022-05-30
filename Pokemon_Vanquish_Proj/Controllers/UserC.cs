@@ -93,7 +93,7 @@ namespace Pokemon_Vanquish_Proj.Controllers
 
         [AllowAnonymous]
         [HttpPost]
-        [Route("authenticate")]
+        [Route("Authenticate")]
         [ProducesResponseType(201)]
         [ProducesResponseType(400)]
         public ActionResult Authenticate([FromQuery][BindRequired] string UserName, [FromQuery][BindRequired] string password)

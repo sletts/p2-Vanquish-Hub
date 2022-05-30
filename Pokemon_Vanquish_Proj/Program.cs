@@ -40,6 +40,7 @@ string connectionString = Config.GetConnectionString("SQLDatabase");
 
 builder.Services.AddDbContext<VanquishDBContext>(options => options.UseSqlServer(connectionString));
 builder.Services.AddScoped<IUserRepoNew, UserRepoNew>();
+builder.Services.AddScoped<IArtworkRepo, ArtworkRepo>();
 
 var app = builder.Build();
 

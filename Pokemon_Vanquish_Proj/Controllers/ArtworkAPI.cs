@@ -1,5 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
-/*
+﻿using DL;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
+using Models;
+
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace Pokemon_Vanquish_Proj.Controllers
@@ -8,37 +13,60 @@ namespace Pokemon_Vanquish_Proj.Controllers
     [ApiController]
     public class ArtworkAPI : ControllerBase
     {
-        // GET: api/<ArtworkAPI>
+        private IArtworkRepo repo;
+        private static List<Artwork> arts = new List<Artwork>();
+        public ArtworkAPI(IArtworkRepo repo)
+        {
+            this.repo = repo;
+        }
         [HttpGet]
-        public IEnumerable<string> Get()
+        [Route("Get All Artworks")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        public ActionResult<List<User>> Get()
         {
-            return new string[] { "value1", "value2" };
+            try
+            {
+                arts = repo.GetAllArtworks();
+            }
+            catch (Exception ex)
+            {
+                //Log.Information("Bad Request exception in get user.");
+                return BadRequest(ex.Message);
+            }
+            //Log.Information("Good request at Get User.");
+            return Ok(arts);
         }
 
-        // GET api/<ArtworkAPI>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-        // POST api/<ArtworkAPI>
         [HttpPost]
-        public void Post([FromBody] string value)
+        [Route("Add Artwork")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        public ActionResult AddNewArtwork([FromQuery][BindRequired] Artwork art)
         {
+            try
+            {
+                arts = repo.GetAllArtworks();
+            }
+            catch (Exception ex)
+            {
+                //Log.Information("Bad Request exception in get user.");
+                return BadRequest(ex.Message);
+            }
+
+            if (arts.Where(a => a.ArtWorkName == art.ArtWorkName).ToList().Count() > 0)
+                return BadRequest("This name is already in use for your artwork.");
+
+            //Try to add a new artwork
+            try
+            {
+                repo.AddArt(art);
+            }
+            catch (Exception ex)
+            {
+                //Log.Information("Excetion occured in AddNewUser: " + ex);
+            }
+            //Log.Information("New user created w/ username: " + user.UserName);
+            return CreatedAtAction("Get", art);
         }
 
-        // PUT api/<ArtworkAPI>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/<ArtworkAPI>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
     }
 }
-*/
