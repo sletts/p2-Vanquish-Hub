@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿/*
+using Microsoft.AspNetCore.Mvc;
+
 using Microsoft.Extensions.Configuration;
 using System.Data.SqlClient;
 using Models;
@@ -37,7 +39,7 @@ namespace Pokemon_Vanquish_Proj.Controllers
             UserRepo userRepo = new UserRepo();
 
             User user = new User();
-            user.Name = name;
+            user.Username = name;
             user.Email = email;
             user.Password = password;
             user.Phone = phone; 
@@ -61,3 +63,4 @@ namespace Pokemon_Vanquish_Proj.Controllers
 
     }
 }
+*/
