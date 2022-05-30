@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿/*
+using Microsoft.AspNetCore.Mvc;
+
 using Microsoft.Extensions.Configuration;
 using System.Data.SqlClient;
 using Models;
@@ -61,3 +63,4 @@ namespace Pokemon_Vanquish_Proj.Controllers
 
     }
 }
+*/

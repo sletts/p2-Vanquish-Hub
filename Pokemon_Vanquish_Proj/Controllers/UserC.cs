@@ -1,4 +1,5 @@
 ﻿using DL;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
@@ -8,11 +9,11 @@ namespace Pokemon_Vanquish_Proj.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class NewUser : ControllerBase
+    public class UserC : ControllerBase
     {
         private IUserRepoNew repo;
         private static List<User> users = new List<User>();
-        public NewUser(IUserRepoNew repo)
+        public UserC(IUserRepoNew repo)
         {
             this.repo = repo;
         }
@@ -90,23 +91,30 @@ namespace Pokemon_Vanquish_Proj.Controllers
             return CreatedAtAction("Get", newUser);
         }
 
-        /*
-         * TODO ADD AUTHENTICATE
         [AllowAnonymous]
         [HttpPost]
         [Route("authenticate")]
         [ProducesResponseType(201)]
         [ProducesResponseType(400)]
-        public ActionResult Authenticate([FromQuery] UserInfo user)
+        public ActionResult Authenticate([FromQuery][BindRequired] string UserName, [FromQuery][BindRequired] string password)
         {
-            var token = JWTrepo.Authenticate(user);
-            if (token == null)
+            try
             {
-                Log.Information("Unauthorized user attempted access.");
-                return Unauthorized("You do not have proper autherization to see this.");
+                users = repo.GetAllUsers();
             }
-            Log.Information("Authorized user given token.");
-            return Ok(token);
-        }*/
+            catch (Exception ex)
+            {
+                //Log.Information("Bad Request exception in get user.");
+                return BadRequest(ex.Message);
+            }
+            var test1 = users.Where(p => p.Username == UserName).ToList();
+            if (test1.Count() == 0)
+                return BadRequest("Username Not Found");
+            var test2 = test1.Where(p => p.Password == password).ToList();
+            if (test2.Count() == 0)
+                return BadRequest("Password incorrect");
+            return Ok("Login");
+            //This is a butched way of doing it, but it works.
+        }
     }
 }

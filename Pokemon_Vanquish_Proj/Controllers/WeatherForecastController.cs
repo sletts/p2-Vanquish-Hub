@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-
+/*
 namespace Pokemon_Vanquish_Proj.Controllers
 {
     [ApiController]
@@ -30,4 +30,4 @@ namespace Pokemon_Vanquish_Proj.Controllers
             .ToArray();
         }
     }
-}
+}*/
