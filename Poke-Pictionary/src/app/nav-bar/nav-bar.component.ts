@@ -12,6 +12,9 @@ export class NavBarComponent implements OnInit {
   navigateLogin(){
     this.router.navigate(['login']);
   }
+  navigateArtwork(){
+    this.router.navigate(['art-work']);
+  }
 
   // Inject our router in the constructor to navigate
   constructor(private router:Router) { 

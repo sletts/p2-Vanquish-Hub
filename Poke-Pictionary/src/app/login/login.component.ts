@@ -24,6 +24,7 @@ export class LoginComponent implements OnInit {
       // Let's store the data in our service's string
       this.loginService.token = data.token;
       console.log(this.loginService.token)
+      console.log(data.status)
       // If we successfully login, let's redirect to the home page
       this.router.navigate(['home'])
     },

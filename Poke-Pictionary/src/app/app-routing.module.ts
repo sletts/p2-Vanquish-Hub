@@ -4,7 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomePageComponent } from './home-page/home-page.component';
 import { LoginComponent } from './login/login.component';
 import { PokePicturesComponent } from './poke-pictures/poke-pictures.component';
-
+import { TestingComponent } from './testing/testing.component';
+import { ArtWorkComponent } from './art-work/art-work.component';
 
 
 const routes: Routes = [
@@ -12,6 +13,8 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'home', component: HomePageComponent},
   {path: 'pokemon', component: PokePicturesComponent},
+  {path: 'testing', component: TestingComponent},
+  {path: 'art-work', component: ArtWorkComponent}
 
   
 ];

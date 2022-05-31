@@ -7,9 +7,7 @@
         </li>
         <li class = "navitem">
             <!-- router link pokemon refers to poke-pictures -->
-            <a class = "navlink" routerLink="login">
-                All Available Pokemon to Draw
-            </a>
+
         </li>
         
         <li class = "navitem">
@@ -17,8 +15,9 @@
                 Secret
             </a>
         </li>
-      
+
         <li class="navitem">
+            <button id="add-button" (click) = "navigateArtwork()">Artwork</button>
             <button id="add-button" (click) = "navigateLogin()">Login</button>
         </li>
     </ul>
