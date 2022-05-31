@@ -7,6 +7,7 @@ import { ArtWorkComponent } from './art-work/art-work.component';
 import { PokePicturesComponent } from './poke-pictures/poke-pictures.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { ArtworkService } from './artwork.service';
 
 
 @NgModule({
@@ -23,7 +24,7 @@ import { HomePageComponent } from './home-page/home-page.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ArtworkService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

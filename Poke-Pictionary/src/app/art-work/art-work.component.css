@@ -1,0 +1,11 @@
+.app-art-work{
+    margin-top: 100px;
+    display:flex;
+    justify-content: left;
+    align-content: center;
+    text-align: left;
+}
+
+.poke-art-work{
+    width: 96%;
+}
