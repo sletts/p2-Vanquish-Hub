@@ -177,7 +177,7 @@ namespace Pokemon_Vanquish_Proj.Controllers
         public ActionResult Update([FromQuery][BindRequired] string UserName, [FromQuery][BindRequired] string password,
             [FromQuery] string NewPhoneNumber, [FromQuery] string NewEmail, [FromQuery] string newUserName, [FromQuery] string NewPassword)
         {
-
+            //TODO
             return Ok();
         }
         /// <summary>
