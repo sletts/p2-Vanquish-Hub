@@ -1,4 +1,4 @@
-.home-page{
+.login-page{
     margin-top: 100px;
     display:flex;
     justify-content: center;
@@ -6,7 +6,6 @@
     text-align: center;
 }
 
-.home-message{
-    width: 80%;
-    color: rgb(87, 2, 2);
+.login-message{
+    width: 96%;
 }

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-nav-bar',
+  selector: 'nav-bar',
   templateUrl: './nav-bar.component.html',
   styleUrls: ['./nav-bar.component.css']
 })
@@ -10,7 +10,10 @@ export class NavBarComponent implements OnInit {
 
   // Create method to navigate to the login page
   navigateLogin(){
-    this.router.navigate(['user']);
+    this.router.navigate(['login']);
+  }
+  navigateArtwork(){
+    this.router.navigate(['art-work']);
   }
 
   // Inject our router in the constructor to navigate
