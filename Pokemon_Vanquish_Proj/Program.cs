@@ -1,3 +1,5 @@
+global using Serilog;
+
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Models;
@@ -6,6 +8,8 @@ using BL;
 using Microsoft.Extensions.Configuration;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using System.Text;
+
+Log.Logger = new LoggerConfiguration().MinimumLevel.Debug().MinimumLevel.Information().CreateLogger(); ;
 
 var builder = WebApplication.CreateBuilder(args);
 
