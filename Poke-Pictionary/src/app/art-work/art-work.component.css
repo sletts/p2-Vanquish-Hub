@@ -1,11 +1,19 @@
-.app-art-work{
+.artwork{
     margin-top: 100px;
     display:flex;
-    justify-content: left;
+    justify-content: center;
     align-content: center;
-    text-align: left;
+    text-align: center;
 }
 
-.poke-art-work{
-    width: 96%;
-}
+body {
+    background: #111;
+    color: #f8f8f8;
+  }
+  canvas {
+    background: #f8f8f8;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    display: block;
+  }

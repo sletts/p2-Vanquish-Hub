@@ -10,7 +10,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { ArtworkService } from './artwork.service';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
-
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     
@@ -26,7 +26,8 @@ import { LoginComponent } from './login/login.component';
   imports: [
     HttpClientModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   exports:[
     NavBarComponent,
