@@ -27,7 +27,7 @@ namespace Pokemon_Vanquish_Proj.Controllers
         [HttpGet]
         [Route("Get All Artworks")]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        public ActionResult<List<User>> Get()
+        public ActionResult<List<Artwork>> Get()
         {
             try
             {
@@ -35,10 +35,10 @@ namespace Pokemon_Vanquish_Proj.Controllers
             }
             catch (Exception ex)
             {
-                //Log.Information("Bad Request exception in get user.");
+                Log.Information("Bad Request exception in get all artworks.");
                 return BadRequest(ex.Message);
             }
-            //Log.Information("Good request at Get User.");
+            Log.Information("Good request at get all artworks.");
             return Ok(arts);
         }
         
@@ -64,6 +64,7 @@ namespace Pokemon_Vanquish_Proj.Controllers
 
             if (arts.Where(a => a.ArtWorkName == art.ArtWorkName).ToList().Count() > 0)
             {
+                Log.Information("Duplicate Artwork name in Add Artwork.");
                 return BadRequest("This name is already in use for your artwork.");
             }
 
@@ -74,10 +75,10 @@ namespace Pokemon_Vanquish_Proj.Controllers
             }
             catch (Exception ex)
             {
-                //Log.Information("Excetion occured in AddNewUser: " + ex);
+                Log.Information("Bad request at add artwork.");
                 return BadRequest("The artwork couldn't be added. Error: " + ex);
             }
-            //Log.Information("New user created w/ username: " + user.UserName);
+            Log.Information("Good request at add artwork.");
             return CreatedAtAction("Get", art);
         }
 
@@ -98,8 +99,10 @@ namespace Pokemon_Vanquish_Proj.Controllers
             }
             catch(Exception ex)
             {
+                Log.Information("Bad request at get delete artwork.");
                 return BadRequest($"Couldn't delete artwork with an id of: {id}. Exception: {ex}");
             }
+            Log.Information("Good request at delete artwork.");
             return Ok();
         }
 
@@ -120,8 +123,10 @@ namespace Pokemon_Vanquish_Proj.Controllers
             }
             catch (Exception ex)
             {
+                Log.Information($"Bad request at get all artwork by UserID: {UserID}.");
                 return BadRequest($"Couldn't Get Art by UserID with a UserID of {UserID}");
             }
+            Log.Information($"Good request at get all artworks by UserID: {UserID}");
             return Ok(arts);
         }
 
@@ -143,6 +148,7 @@ namespace Pokemon_Vanquish_Proj.Controllers
             }
             catch(Exception ex)
             {
+                Log.Information($"Bad request at delete art by UserID with a UserID of {UserID}.");
                 return BadRequest($"Couldn't Delete Art by UserID with a UserID of {UserID}");
             }
             foreach (Artwork art in deleteList)
@@ -153,9 +159,11 @@ namespace Pokemon_Vanquish_Proj.Controllers
                 }
                 catch
                 {
+                    Log.Information($"Bad Request at Delete Art with an ID of {art.Id}.");
                     return BadRequest($"Couldn't Delete Art with an ID of {art.Id}");
                 }
             }
+            Log.Information($"Deleted all art with UserID of {UserID} successfully.");
             return Ok();
         }
     }
