@@ -10,7 +10,7 @@ export class NavBarComponent implements OnInit {
 
   // Create method to navigate to the login page
   navigateLogin(){
-    this.router.navigate(['user']);
+    this.router.navigate(['login']);
   }
 
   // Inject our router in the constructor to navigate
