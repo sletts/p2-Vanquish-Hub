@@ -25,7 +25,10 @@ namespace DL
         {
             var deletethis = db.artworks.Where(u => u.Id == id).FirstOrDefault();
             if (deletethis != null)
+            {
                 db.artworks.Remove(deletethis);
+                db.SaveChanges();
+            }
         }
 
         public List<Artwork> GetAllArtworks()

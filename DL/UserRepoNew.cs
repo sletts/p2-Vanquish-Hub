@@ -24,7 +24,10 @@ namespace DL
         {
             var deletethis = db.users.Where(u => u.Id == id).FirstOrDefault();
             if(deletethis != null)
+            {
                 db.users.Remove(deletethis);
+                db.SaveChanges();
+            }
         }
 
         public List<User> GetAllUsers()

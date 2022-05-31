@@ -1,3 +1,5 @@
+global using Serilog;
+
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Models;
@@ -7,10 +9,21 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using System.Text;
 
+Log.Logger = new LoggerConfiguration().MinimumLevel.Debug().MinimumLevel.Information().CreateLogger(); ;
+
 var builder = WebApplication.CreateBuilder(args);
 
 ConfigurationManager Config = builder.Configuration;
-
+var pokePolicy = "allowedOrigins";
+builder.Services.AddCors(options =>
+{
+options.AddPolicy(
+    name: pokePolicy,
+    policy => {
+        policy.WithOrigins("'http://localhost:4200").AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
+        }
+    );
+});
 builder.Services.AddAuthentication(option =>
 {
     option.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -52,9 +65,8 @@ if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
 }
 
 app.UseHttpsRedirection();
-
+app.UseCors(pokePolicy);
 app.UseAuthorization();
-
 app.MapControllers();
 
 app.Run();
