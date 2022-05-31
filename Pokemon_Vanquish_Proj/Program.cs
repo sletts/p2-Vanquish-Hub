@@ -20,7 +20,7 @@ builder.Services.AddCors(options =>
 options.AddPolicy(
     name: pokePolicy,
     policy => {
-        policy.WithOrigins("'http://localhost:4200/").AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
+        policy.WithOrigins("'http://localhost:4200").AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
         }
     );
 });
