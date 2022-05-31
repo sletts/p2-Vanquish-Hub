@@ -2,13 +2,18 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomePageComponent } from './home-page/home-page.component';
+import { LoginComponent } from './login/login.component';
 import { PokePicturesComponent } from './poke-pictures/poke-pictures.component';
+
 
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
+  {path: 'login', component: LoginComponent},
   {path: 'home', component: HomePageComponent},
-  {path: 'pokemon', component: PokePicturesComponent}
+  {path: 'pokemon', component: PokePicturesComponent},
+
+  
 ];
 
 @NgModule({

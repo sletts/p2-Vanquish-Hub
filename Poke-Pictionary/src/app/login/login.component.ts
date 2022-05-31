@@ -9,13 +9,13 @@ import { LoginService } from '../login.service';
 })
 export class LoginComponent implements OnInit {
 
-  // userName
+  // Adding in defaults to store info
   userName:string = "";
   password:string = "";
 
   error:boolean = false;
 
-  // Submission handling
+  // Create  onsubmit to handle submissions
   onSubmit():void{
     console.log(this.userName, this.password)
     this.loginService.login(this.userName, this.password)

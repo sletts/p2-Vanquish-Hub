@@ -9,6 +9,9 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { LoginButtonComponent } from './login-button/login-button.component';
 import { LoginComponent } from './login/login.component';
+import { FormsModule } from '@angular/forms';
+import { TestingComponent } from './testing/testing.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -21,11 +24,16 @@ import { LoginComponent } from './login/login.component';
     HomePageComponent,
     LoginButtonComponent,
     LoginComponent,
+    TestingComponent,
+
+   
     
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

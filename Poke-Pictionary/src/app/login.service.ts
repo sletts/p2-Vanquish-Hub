@@ -12,7 +12,7 @@ export class LoginService {
 
   // Login Logic
   login(userName:string, password:string):Observable<any>{
-    return this.http.post("https://vanquish-p2.azurewebsites.net/api/UserC/Authenticate", JSON.stringify({userName, password}),
+    return this.http.post("https://vanquish-p2.azurewebsites.net/api/UserC/Authenticate/", JSON.stringify({userName, password}),
     // We need to add headers to specify content type
     {headers: {'Content-Type':'application/json'}}
     )
