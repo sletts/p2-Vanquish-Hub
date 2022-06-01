@@ -16,7 +16,7 @@ import { map } from 'rxjs/operators';
   })
   export class PokePictureService {
     
-    getProduct(id:string): Observable<any> {
+    getPokeImage(id:string): Observable<any> {
       return this.http.get(endpoint + 'name/'+ id);/**.pipe(
         map(this.extractData),
         catchError(this.handleError)
