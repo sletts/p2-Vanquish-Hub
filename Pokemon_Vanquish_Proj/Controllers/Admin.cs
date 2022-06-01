@@ -11,10 +11,13 @@ namespace Pokemon_Vanquish_Proj.Controllers
     public class Admin : ControllerBase
     {
         private IUserRepoNew repo;
+        private IArtworkRepo Artrepo;
         private static List<User> users = new List<User>();
-        public Admin(IUserRepoNew repo)
+        private static List<Artwork> arts = new List<Artwork>();
+        public Admin(IUserRepoNew repo, IArtworkRepo Artrepo)
         {
             this.repo = repo;
+            this.Artrepo = Artrepo;
         }
         /// <summary>
         /// Gets all the users from the database and returns them.
@@ -40,6 +43,7 @@ namespace Pokemon_Vanquish_Proj.Controllers
         }
         /// <summary>
         /// Takes in a user ID and deletes them from the DB
+        /// Deletes associated art images as well
         /// </summary>
         /// <param name="id"></param>
         /// <returns>Returns 200 if the user was deleted. 400 if not.</returns>
@@ -49,6 +53,31 @@ namespace Pokemon_Vanquish_Proj.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public ActionResult Delete([FromQuery][BindRequired] int id)
         {
+            //remove associated images first
+            var deleteArt = new List<Artwork>();
+            try
+            {
+                deleteArt = Artrepo.GetArtByUserID(id);
+            }
+            catch(Exception ex)
+            {
+                Log.Information("Bad Request exception in delete user @ Admin, deleting associated art subsection.");
+                return BadRequest(ex.Message);
+            }
+            foreach(var art in deleteArt)
+            {
+                try
+                {
+                    //removes associated images
+                    Artrepo.DeleteArt(art.Id);
+                }
+                catch (Exception ex)
+                {
+                    Log.Information($"Failed to delete art with an id of {art.Id} with user ID of {id}");
+                    return BadRequest(ex.Message);
+                }
+            }
+            //remove user
             try
             {
                 repo.DeleteUser(id);

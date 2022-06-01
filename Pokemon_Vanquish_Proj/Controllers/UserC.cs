@@ -175,9 +175,66 @@ namespace Pokemon_Vanquish_Proj.Controllers
         [ProducesResponseType(200)]
         [ProducesResponseType(204)]
         public ActionResult Update([FromQuery][BindRequired] string UserName, [FromQuery][BindRequired] string password,
-            [FromQuery] string NewPhoneNumber, [FromQuery] string NewEmail, [FromQuery] string newUserName, [FromQuery] string NewPassword)
+            [FromQuery] string NewPhoneNumber, [FromQuery] string NewEmail, [FromQuery] string NewPassword)
         {
-            //TODO
+            //Update users
+            try
+            {
+                users = repo.GetAllUsers();
+            }
+            catch (Exception ex)
+            {
+                Log.Information("Bad Request exception in GetAllUsers @ Update in userC.");
+                return BadRequest(ex.Message);
+            }
+            //check if username and password match
+            var testUser = users.Where(p => p.Username == UserName).FirstOrDefault();
+            if(testUser == null)
+            {
+                Log.Information("Username not found @ Update User.");
+                return NoContent();
+            }
+            if(testUser.Password != password)
+            {
+                Log.Information("Password incorrect @ Update User.");
+                return NoContent();
+            }
+            //checks to make sure new e mail or number isn't in use
+            if(users.Where(p=>p.Email == NewEmail).FirstOrDefault() != null)
+            {
+                Log.Information("Email already in use @ Update User.");
+                return BadRequest("Email already in use");
+            }
+            else if (users.Where(p => p.Phone == NewPhoneNumber).FirstOrDefault() != null)
+            {
+                Log.Information("Phone Numbmer already in use @ Update User.");
+                return BadRequest("Phone Number already in use");
+            }
+            //update info
+            if (NewPhoneNumber != null && NewPhoneNumber != " ")
+            {
+                Log.Information($"Updating {testUser.Username} 's Phone number to {NewPhoneNumber}");
+                testUser.Phone = NewPhoneNumber;
+            }
+            if (NewEmail != null && NewEmail != " ")
+            {
+                Log.Information($"Updating {testUser.Username} 's email to {NewEmail}");
+                testUser.Email = NewEmail;
+            }
+            if (NewPassword != null && NewPassword != " ")
+            {
+                Log.Information($"Updating {testUser.Username} 's password to {NewPassword}");
+                testUser.Password = NewPassword;
+            }
+            try
+            {
+                repo.Update(testUser);
+            }
+            catch (Exception ex)
+            {
+                Log.Information("Bad request in Updating @ Update in UserC");
+                return BadRequest(ex.Message);
+            }
             return Ok();
         }
         /// <summary>

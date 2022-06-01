@@ -1,4 +1,4 @@
-.login-page{
+.register-page{
     margin-top: 100px;
     display:flex;
     justify-content: center;
@@ -6,8 +6,19 @@
     text-align: center;
 }
 
-.login-message{
+.register-message{
     width: 96%;
+}
+.error{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.input-div{
+    justify-content: left;
+    align-content: left;
+    text-align: left;
 }
 .error{
     display:flex;

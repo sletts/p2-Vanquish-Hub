@@ -1,7 +1,9 @@
+
 <div class = "login-page">
     <!--<h3 *ngIf = 'error'> Username or Password Incorrect</h3>-->
-    
+   
     <form id = "login" (ngSubmit)="onSubmit()">
+        <h3 *ngIf = 'error'> Username or Password Incorrect</h3>
         <div class = "input-div">
             <label for="username"> Username:</label>
             <input id="username" name="username" type = "text" required [(ngModel)] = "userName">

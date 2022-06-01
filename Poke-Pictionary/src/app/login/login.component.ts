@@ -21,17 +21,23 @@ export class LoginComponent implements OnInit {
     this.loginService.login(this.userName, this.password)
     .subscribe((data) =>{
       console.log(data)
+
       // Let's store the data in our service's string
-      this.loginService.token = data.token;
-      console.log(this.loginService.token)
-      console.log(data.status)
-      // If we successfully login, let's redirect to the home page
-      this.router.navigate(['home'])
+     // this.loginService.token = data.token;
+     // console.log(this.loginService.token)
+
+      // If we successfully login, let's redirect to the home 
     },
     (error) =>{
       console.log(error)
+      if(error.status == 200)
+      {
+        this.router.navigate(["canvas"])
+      }
+      //console.log(error.response.status);
       // Makes error message appear through ngIf
       this.error = true;
+
     })
   }
 
