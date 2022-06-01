@@ -25,8 +25,8 @@ jobs:
         run: |
           npm install
           npm run build --if-present
-          npm run test --if-present
-
+        working-directory: .
+        
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
         with:
@@ -53,4 +53,4 @@ jobs:
           app-name: 'poke-pictionary-vanquish'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A9065DD0B68B467F8BAA1A8797E94C62 }}
-          package: .
+          package: ./dist/poke-pictionary
