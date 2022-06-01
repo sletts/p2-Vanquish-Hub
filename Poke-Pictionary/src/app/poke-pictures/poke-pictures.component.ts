@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PokePicturesComponent implements OnInit {
 
+  pokedexMessage:string= "You made a decision!!"
+  whoaMessage:string= "Page work in progress"
+
   constructor() { }
 
   ngOnInit(): void {

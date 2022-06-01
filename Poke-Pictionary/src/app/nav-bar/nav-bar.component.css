@@ -33,12 +33,12 @@ z-index: 1;
     height: 60px;
     width: 60px;
     border-radius: 100%;
-    object-fit: cover;
+    object-fit: contain;
     position: relative;
     top: 10%;
 }
 #add-button{
-    background-color: #060c19;
+    background-color: #1e0028;
     border: none;
     color: white;
     padding: 15px 32px;
