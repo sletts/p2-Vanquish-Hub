@@ -32,7 +32,7 @@ export class LoginComponent implements OnInit {
       console.log(error)
       if(error.status == 200)
       {
-        this.router.navigate(["app-art-work"])
+        this.router.navigate(["canvas"])
       }
       //console.log(error.response.status);
       // Makes error message appear through ngIf

@@ -6,6 +6,9 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { LoginComponent } from './login/login.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { PokePicturesComponent } from './poke-pictures/poke-pictures.component';
+import { RegisterComponent } from './register/register.component';
+import { CanvasComponent } from './canvas/canvas.component';
+
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -13,7 +16,9 @@ const routes: Routes = [
   {path: 'home', component: HomePageComponent},
   {path: 'pokemon', component: PokePicturesComponent},
   {path: 'nav-bar', component: NavBarComponent},
-  {path: 'app-art-work', component: ArtWorkComponent}
+  {path: 'app-art-work', component: ArtWorkComponent},
+  {path: 'register', component: RegisterComponent},
+  {path: 'canvas', component: CanvasComponent}
 ];
 
 @NgModule({

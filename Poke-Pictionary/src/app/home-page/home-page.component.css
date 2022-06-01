@@ -10,3 +10,10 @@
     width: 80%;
     color: rgb(87, 2, 2);
 }
+
+canvas {
+    border: 1px solid #000; 
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}

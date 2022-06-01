@@ -1,0 +1,30 @@
+
+<button class = "button" type ="button" id = "btnSave">Save</button>
+
+<div class = "the-canvas">
+<canvas #canvas id = thecanvas></canvas>
+
+<img id="pokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" />
+<script>
+  var img = document.getElementById("pokemon");
+  img.onload = function () {
+  alert("New image has been loaded");
+};
+  img.src = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png";
+</script>
+
+</div>
+
+
+
+<script>
+    const btnDisplay = document.querySelector("#btnDisplay")
+    const btnSave = document.querySelector("#btnSave")
+    const myCanvas = document.querySelector("#thecanvas")
+
+    btnSave.addEventListener("click", function () {
+        const dataURI = myCanvas.toDataURL();
+        console.log(dataURI);
+    });
+    
+</script>
