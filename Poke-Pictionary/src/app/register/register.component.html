@@ -1,5 +1,7 @@
 <div class = "register-page">
+  
     <form id = "register" (ngSubmit)="onSubmit()">
+        <h3 *ngIf = 'error'> Username or Email already in use</h3>
         <div class = "input-div">
             <label for="username"> Username:</label>
             <input id="username" name="username" type = "text" required [(ngModel)] = "userName">

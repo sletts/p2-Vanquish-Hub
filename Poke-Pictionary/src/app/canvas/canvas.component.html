@@ -1,15 +1,12 @@
-
+<body>
 <button class = "button" type ="button" id = "btnSave">Save</button>
 
 <div class = "the-canvas">
 <canvas #canvas id = thecanvas></canvas>
 
-<img id="pokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" />
+<img id="pokemon" class = "pokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png" />
 <script>
   var img = document.getElementById("pokemon");
-  img.onload = function () {
-  alert("New image has been loaded");
-};
   img.src = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png";
 </script>
 
@@ -28,3 +25,5 @@
     });
     
 </script>
+
+</body>

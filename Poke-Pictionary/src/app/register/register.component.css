@@ -20,3 +20,9 @@
     align-content: left;
     text-align: left;
 }
+.error{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}

@@ -25,16 +25,20 @@ error:boolean = false;
   },
   (error) =>{
     console.log(error)
-    if(error.status == 200)
+
+    if(error.status == 400)
     {
-      this.router.navigate(["home"])
+      
     }
-    //console.log(error.response.status);
-    // Makes error message appear through ngIf
+    else{
+      this.router.navigate(["register"])
+    }
+    
     this.error = true;
 
+    
   })
-
+ 
 
 }
   
