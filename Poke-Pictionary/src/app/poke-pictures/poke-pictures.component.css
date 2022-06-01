@@ -1,0 +1,15 @@
+.pokePictures{
+    display: flexbox table-row;
+    justify-content: right;
+}
+.backgroundFilling{
+    margin-top: 70px;
+    background-color: rgb(187, 161, 211);
+    height: 1200;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    z-index: 1;
+}
