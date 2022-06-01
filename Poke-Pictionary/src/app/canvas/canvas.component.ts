@@ -15,9 +15,9 @@ import { switchMap, takeUntil, pairwise } from 'rxjs/operators';
 })
 export class CanvasComponent implements AfterViewInit {
 
-    random:number = Math.floor(Math.random() * (Math.floor(1126) - Math.ceil(1) + 1)) + Math.ceil(1); 
+    random:number = Math.floor(Math.random() * 1126) + 1; 
 
-    image:string = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png"
+    image:string = ""
 
   ngOnInit()
   {
