@@ -4,26 +4,5 @@
 <div class = "the-canvas">
 <canvas #canvas id = thecanvas></canvas>
 
-<img id="pokemon" class = "pokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png" />
-<script>
-  var img = document.getElementById("pokemon");
-  img.src = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png";
-</script>
-
+<img [src]="image" id="pokemon" class = "pokemon" />
 </div>
-
-
-
-<script>
-    const btnDisplay = document.querySelector("#btnDisplay")
-    const btnSave = document.querySelector("#btnSave")
-    const myCanvas = document.querySelector("#thecanvas")
-
-    btnSave.addEventListener("click", function () {
-        const dataURI = myCanvas.toDataURL();
-        console.log(dataURI);
-    });
-    
-</script>
-
-</body>

@@ -17,7 +17,12 @@ export class CanvasComponent implements AfterViewInit {
 
     random:number = Math.floor(Math.random() * (Math.floor(1126) - Math.ceil(1) + 1)) + Math.ceil(1); 
 
+    image:string = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png"
 
+  ngOnInit()
+  {
+    this.image = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/' + this.random + '.png'
+  }
 
 
 
@@ -51,15 +56,13 @@ export class CanvasComponent implements AfterViewInit {
     fromEvent(canvasEl, 'mousedown')
       .pipe(
         switchMap(e => {
-          // after a mouse down, we'll record all mouse moves
+         
           return fromEvent(canvasEl, 'mousemove').pipe(
-            // we'll stop (and unsubscribe) once the user releases the mouse
-            // this will trigger a 'mouseup' event
+        
             takeUntil(fromEvent(canvasEl, 'mouseup')),
-            // we'll also stop (and unsubscribe) once the mouse leaves the canvas (mouseleave event)
+         
             takeUntil(fromEvent(canvasEl, 'mouseleave')),
-            // pairwise lets us get the previous value to draw a line from
-            // the previous point to the current point
+    
             pairwise()
           );
         })
@@ -69,7 +72,6 @@ export class CanvasComponent implements AfterViewInit {
         const prevMouseEvent = res[0] as MouseEvent;
         const currMouseEvent = res[1] as MouseEvent;
 
-        // previous and current position with the offset
         const prevPos = {
           x: prevMouseEvent.clientX - rect.left,
           y: prevMouseEvent.clientY - rect.top
@@ -80,7 +82,6 @@ export class CanvasComponent implements AfterViewInit {
           y: currMouseEvent.clientY - rect.top
         };
 
-        // this method we'll implement soon to do the actual drawing
         this.drawOnCanvas(prevPos, currentPos);
       });
   }
