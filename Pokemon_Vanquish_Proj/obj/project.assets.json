@@ -10094,11 +10094,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Owner\\Desktop\\Revature\\TEST\\EF_TEST_2\\p2-Vanquish-Hub\\Pokemon_Vanquish_Proj\\Pokemon_Vanquish_Proj.csproj",
+      "projectUniqueName": "C:\\Users\\Owner\\Desktop\\Revature\\TEST\\T3\\p2-Vanquish-Hub\\Pokemon_Vanquish_Proj\\Pokemon_Vanquish_Proj.csproj",
       "projectName": "Pokemon_Vanquish_Proj",
-      "projectPath": "C:\\Users\\Owner\\Desktop\\Revature\\TEST\\EF_TEST_2\\p2-Vanquish-Hub\\Pokemon_Vanquish_Proj\\Pokemon_Vanquish_Proj.csproj",
+      "projectPath": "C:\\Users\\Owner\\Desktop\\Revature\\TEST\\T3\\p2-Vanquish-Hub\\Pokemon_Vanquish_Proj\\Pokemon_Vanquish_Proj.csproj",
       "packagesPath": "C:\\Users\\Owner\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Owner\\Desktop\\Revature\\TEST\\EF_TEST_2\\p2-Vanquish-Hub\\Pokemon_Vanquish_Proj\\obj\\",
+      "outputPath": "C:\\Users\\Owner\\Desktop\\Revature\\TEST\\T3\\p2-Vanquish-Hub\\Pokemon_Vanquish_Proj\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -10119,14 +10119,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Owner\\Desktop\\Revature\\TEST\\EF_TEST_2\\p2-Vanquish-Hub\\BL\\BL.csproj": {
-              "projectPath": "C:\\Users\\Owner\\Desktop\\Revature\\TEST\\EF_TEST_2\\p2-Vanquish-Hub\\BL\\BL.csproj"
+            "C:\\Users\\Owner\\Desktop\\Revature\\TEST\\T3\\p2-Vanquish-Hub\\BL\\BL.csproj": {
+              "projectPath": "C:\\Users\\Owner\\Desktop\\Revature\\TEST\\T3\\p2-Vanquish-Hub\\BL\\BL.csproj"
             },
-            "C:\\Users\\Owner\\Desktop\\Revature\\TEST\\EF_TEST_2\\p2-Vanquish-Hub\\DL\\DL.csproj": {
-              "projectPath": "C:\\Users\\Owner\\Desktop\\Revature\\TEST\\EF_TEST_2\\p2-Vanquish-Hub\\DL\\DL.csproj"
+            "C:\\Users\\Owner\\Desktop\\Revature\\TEST\\T3\\p2-Vanquish-Hub\\DL\\DL.csproj": {
+              "projectPath": "C:\\Users\\Owner\\Desktop\\Revature\\TEST\\T3\\p2-Vanquish-Hub\\DL\\DL.csproj"
             },
-            "C:\\Users\\Owner\\Desktop\\Revature\\TEST\\EF_TEST_2\\p2-Vanquish-Hub\\Models\\Models.csproj": {
-              "projectPath": "C:\\Users\\Owner\\Desktop\\Revature\\TEST\\EF_TEST_2\\p2-Vanquish-Hub\\Models\\Models.csproj"
+            "C:\\Users\\Owner\\Desktop\\Revature\\TEST\\T3\\p2-Vanquish-Hub\\Models\\Models.csproj": {
+              "projectPath": "C:\\Users\\Owner\\Desktop\\Revature\\TEST\\T3\\p2-Vanquish-Hub\\Models\\Models.csproj"
             }
           }
         }

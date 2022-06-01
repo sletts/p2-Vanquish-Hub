@@ -15,7 +15,7 @@ import { switchMap, takeUntil, pairwise } from 'rxjs/operators';
 })
 export class CanvasComponent implements AfterViewInit {
 
-    random:number = Math.floor(Math.random() * 1126) + 1; 
+    random:number = Math.floor(Math.random() * 898) + 1; 
 
     image:string = ""
 

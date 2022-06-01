@@ -9,7 +9,7 @@ export class PokePicturesComponent implements OnInit {
 
   pokedexMessage:string= "You made a decision!!"
   whoaMessage:string= "Pokémon Available to paint"
-  random:number = Math.floor(Math.random() * 1126) + 1; 
+  random:number = Math.floor(Math.random() * 898) + 1; 
 
     image:string = ""
     name:string= ""
