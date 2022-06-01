@@ -1,0 +1,29 @@
+.the-canvas{
+
+    display:auto;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    border: 10px solid #000;
+    margin-left: calc(50% - 237.5px);
+    margin-right: calc(50% - 256.5px);
+    margin-top: 100px;
+}
+.button{
+    display:auto;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.pokemon{
+    display:auto;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin-right: calc(50% - 237.5px);
+    margin-left: calc(50% - 237.5px);
+    border: 10px solid #000;
+    margin-top: 20px;
+ 
+}
+#canvas { border: 1px solid #000; padding: 0; margin: auto; display: block;} 

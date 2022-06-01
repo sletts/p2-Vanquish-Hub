@@ -8,12 +8,18 @@ import { Router } from '@angular/router';
 })
 export class NavBarComponent implements OnInit {
 
-  // Create method to navigate to the login page
+  navigateHome(){
+    this.router.navigate(['home']);
+  }
+
   navigateLogin(){
     this.router.navigate(['login']);
   }
   navigateArtwork(){
     this.router.navigate(['art-work']);
+  }
+  navigateRegister(){
+    this.router.navigate(['register']);
   }
 
   // Inject our router in the constructor to navigate

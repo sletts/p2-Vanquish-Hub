@@ -11,6 +11,9 @@ import { ArtworkService } from './artwork.service';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
+import { RegisterComponent } from './register/register.component';
+import { CanvasComponent } from './canvas/canvas.component';
+
 @NgModule({
   declarations: [
     
@@ -21,6 +24,9 @@ import { FormsModule } from '@angular/forms';
     NavBarComponent,
     HomePageComponent,
     LoginComponent,
+    RegisterComponent,
+    CanvasComponent,
+
     
   ],
   imports: [
