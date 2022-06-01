@@ -1,6 +1,6 @@
 .navbar{
 background-color: rgb(81, 60, 101);
-height: 60px;
+height: 70px;
 position: fixed;
 top: 0;
 left: 0;
@@ -35,7 +35,7 @@ z-index: 1;
     border-radius: 100%;
     object-fit: cover;
     position: relative;
-    top: 12%;
+    top: 10%;
 }
 #add-button{
     background-color: #060c19;
