@@ -40,7 +40,7 @@ Once done, the other person gets the image and can try and guess what pokemon it
     - [pokeapi.co](https://pokeapi.co/)
 
 ## Features
-
+List of features ready and TODOs for future development
 * Register a new user
 * Login
 * Draw an image on the canvas
