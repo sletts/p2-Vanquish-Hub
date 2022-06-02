@@ -1,4 +1,4 @@
-# Resturant Reviewer
+# Poke-Pictionary
 
 ## Project Description
 
@@ -41,31 +41,38 @@ Once done, the other person gets the image and can try and guess what pokemon it
 
 ## Features
 
-List of features ready and TODOs for future development
-* Add a new user
-* Ability to search user as admin
-* Display details of a restaurant for user
-* Add reviews to a restaurant as a user
-* View details of restaurants as a user
-* View reviews of restaurants as a user
-* Search restaurant (by name or zip code)
+* Register a new user
+* Login
+* Draw an image on the canvas
+* Recieve a random Pokemon from the pokeAPI to draw
+* Functional API that can be pinged by any other website
 
 Todo:
-* Calculate reviews’ average rating for each restaurant
+* Multiplayer aspect
+* Google sign on
+* Saving images
+* Increasing Security
+* Admin Page
 
 ## Getting Started
 
-git clone https://github.com/220328-uta-sh-net-ext/Sean-Letts.git
+git clone https://github.com/sletts/p2-Vanquish-Hub
+
 Open your Visual Stuido
-Select build at the top
-Observe the program running
+Open Pokemon_Vanquish_Proj
+Run the program to observe the API working on your computer
+
+cd into the poke-pictionary and run  ng serve -o
+The website will then run locally
 
 or
 
-Go to https://resturantapitest.azurewebsites.net/swagger/index.html
-From here you can test the diffent functionalities.
-If you want to post something to the database outside of logging in, you will need to use Postman to do so.
-Get the authentication token after performing a successful login
-Put the token into the bearer token section in Postman
-Post a new resturant or review with the proper information attached. 
+Go to https://poke-pictionary.azurewebsites.net/ and play the game
+Go to https://vanquish-p2.azurewebsites.net/swagger/index.html and observe the API and the functionality 
 
+## Contributors
+
+- Steve Burgos
+- Osman Elmahadi
+- Randy Robinson
+- Sean Letts
